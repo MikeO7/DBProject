@@ -1,6 +1,8 @@
 CREATE DATABASE IF NOT EXISTS IT;
 
+
 USE IT;
+
 
 DROP TABLE IF EXISTS Customers;
 DROP TABLE IF EXISTS Employees;
@@ -15,13 +17,14 @@ DROP TABLE IF EXISTS Supplies;
 DROP TABLE IF EXISTS ProductSupplier;
 
 
+
 CREATE TABLE Customers (
          CustomerId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CompanyName VARCHAR(30),
          ContactName VARCHAR(30),
          MobilePhone VARCHAR(10),
          Email VARCHAR(30),
-         Address VARCHAR(100),
+         Address VARCHAR(30),
          City VARCHAR(30),
          State VARCHAR(30),
          Country VARCHAR(30),
