@@ -1,7 +1,7 @@
-CREATE DATABASE IF NOT EXISTS IT;
+CREATE DATABASE IF NOT EXISTS Test;
 
 
-USE IT;
+USE Test;
 
 
 DROP TABLE IF EXISTS Customers;
@@ -29,7 +29,7 @@ CREATE TABLE Customers (
          State VARCHAR(30),
          Country VARCHAR(30),
          PostCode VARCHAR(5),
-         SalesRepId INT --FK
+         SalesRepId INT -- FK
        );
 
 
@@ -38,7 +38,7 @@ CREATE TABLE Employees (
          LastName VARCHAR(30),
          FirstName VARCHAR(30),
          jobTitle VARCHAR(10),
-         ReportsTo VARCHAR(30), --FK????
+         ReportsTo VARCHAR(30), -- FK????
          MobilePhone VARCHAR(30),
          Email VARCHAR(30),
          Address VARCHAR(30),
@@ -59,11 +59,11 @@ CREATE TABLE Products (
 
 CREATE TABLE Orders (
          OrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-         CustomerId VARCHAR(30), --FK
-         EmployeeId VARCHAR(30), --FK
+         CustomerId VARCHAR(30), -- FK
+         EmployeeId VARCHAR(30), -- FK
          OrderedDate DATE, 
          RequiredDate DATE, 
-         OrderStatus INT, --??????
+         OrderStatus INT, -- ??????
          ShippedDate Date,
          ShipperID VARCHAR(30),
          ShipToName VARCHAR(30),
