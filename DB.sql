@@ -10,7 +10,6 @@ DROP TABLE IF EXISTS Products;
 DROP TABLE IF EXISTS Orders;
 DROP TABLE IF EXISTS Invoices;
 DROP TABLE IF EXISTS ProductDetails;
-DROP TABLE IF EXISTS OrderLines;
 DROP TABLE IF EXISTS Shippers;
 DROP TABLE IF EXISTS Payments;
 DROP TABLE IF EXISTS Supplies;
@@ -18,7 +17,7 @@ DROP TABLE IF EXISTS ProductSupplier;
 
 
 
-CREATE TABLE Customers (
+CREATE TABLE Customers ( -- good
          CustomerId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CompanyName VARCHAR(30),
          ContactName VARCHAR(30),
@@ -33,7 +32,7 @@ CREATE TABLE Customers (
        );
 
 
-CREATE TABLE Employees (
+CREATE TABLE Employees ( -- good
          empolyeeId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          LastName VARCHAR(30),
          FirstName VARCHAR(30),
@@ -45,19 +44,19 @@ CREATE TABLE Employees (
          City VARCHAR(30),
          Country VARCHAR(30),
          State VARCHAR(2),
-         PostalCode(5)
+         PostalCode INT(5)
        );
 
-CREATE TABLE Products (
+CREATE TABLE Products ( -- good
          ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          Name VARCHAR(30),
          Description VARCHAR(1000),
-         SuggestedUnitPrice DOUBLE(2.2), 
-         BuyUnitPrice DOUBLE(2.2), 
+         SuggestedUnitPrice NUMERIC(15,2), 
+         BuyUnitPrice NUMERIC(15,2), 
          UnitsInStock INT
        );
 
-CREATE TABLE Orders (
+CREATE TABLE Orders ( -- good
          OrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CustomerId VARCHAR(30), -- FK
          EmployeeId VARCHAR(30), -- FK
@@ -73,31 +72,31 @@ CREATE TABLE Orders (
          ShipToPostalCode VARCHAR(5)
        );
 
-CREATE TABLE Invoices (
+CREATE TABLE Invoices ( -- good
          InvoiceId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          OrderId VARCHAR(30),
-         InvoiceDate DATE, 
+         InvoiceDate DATE
        );
 
-CREATE TABLE ProductDetails (
+CREATE TABLE ProductDetails ( -- good
          ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          MoreDescription VARCHAR(1000) 
        );
 
-CREATE TABLE Shippers (
+CREATE TABLE Shippers ( -- good
          ShipperId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CompanyName VARCHAR(30),
          ContactName VARCHAR(30),
          ContactPhone VARCHAR(10) 
        );
 
-CREATE TABLE Payments (
+CREATE TABLE Payments ( -- good
          PrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          PaymentDate Date,
-         Amount Double(2,2)
+         Amount NUMERIC(15,2)
        );
 
-CREATE TABLE Supplies (
+CREATE TABLE Supplies ( -- good
          SupplierId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CompanyName VARCHAR(30),
          ContactName VARCHAR(30),
@@ -105,13 +104,13 @@ CREATE TABLE Supplies (
          Email VARCHAR(30),
          Address VARCHAR(30),
          City VARCHAR(30),
-         PostalCode VARCHAR(5), 
+         PostalCode VARCHAR(5)
        );
 
-CREATE TABLE ProductSupplier (
+CREATE TABLE ProductSupplier ( -- good
          ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          SupplierId VARCHAR(30),
-         Notes VARCHAR(1000),
+         Notes VARCHAR(1000)
        );
 
 
