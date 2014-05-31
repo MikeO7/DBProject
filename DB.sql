@@ -28,7 +28,8 @@ CREATE TABLE Customers ( -- good
          State VARCHAR(30),
          Country VARCHAR(30),
          PostCode VARCHAR(5),
-         SalesRepId INT -- FK
+         SalesRepId INT,
+         FOREIGN KEY (SalesRepId) REFERENCES Employees(empolyeeId) 
        );
 
 
