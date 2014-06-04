@@ -65,9 +65,6 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">IT Products</h1>
                         <p class="intro-text">Welcome, Ryan.  Click the links above to get started.</p>
-                        <form>
-                        
-                        </form>
                         <div class="page-scroll">
                             <a href="#about" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down animated"></i>
@@ -84,6 +81,10 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Custom Query</h2>
                 <p>Type your own SQL query in the box below to find exactly what you're looking for.</p>
+                	<form name = "query_input" action="run_query.php" method="POST">
+                       Type your query here: <input type="text" size="50" name="query">
+                       <input type="submit" value="Run Query!"> <br>
+                    </form>
                 
             </div>
         </div>
