@@ -1,3 +1,3 @@
-Point your MAMP at the htdocs folder
+Point your MAMP at the www folder
 
 localhost:8888/sqlbuddy

@@ -3,7 +3,8 @@
  // Connects to your Database 
  mysql_connect("localhost:8888", "root", "root") or die(mysql_error()); 
  mysql_select_db("Test") or die(mysql_error()); 
- 
+
+ //Sample on how to query the database
  $data = mysql_query("SELECT * FROM friends WHERE pet='Cat'") 
  or die(mysql_error()); 
  Print "<table border cellpadding=3>"; 
