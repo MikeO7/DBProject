@@ -1,0 +1,1 @@
+Point your MAMP at the htdocs folder
