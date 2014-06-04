@@ -20,6 +20,7 @@ DROP TABLE IF EXISTS ProductSupplier;
 CREATE TABLE Customers ( 
          CustomerId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CompanyName VARCHAR(30),
+         SalesRepId INT,
          ContactName VARCHAR(30),
          MobilePhone VARCHAR(10),
          Email VARCHAR(30),
@@ -28,15 +29,15 @@ CREATE TABLE Customers (
          State VARCHAR(30),
          Country VARCHAR(30),
          PostCode VARCHAR(5),
-         SalesRepId INT FOREIGN KEY REFERENCES Employees(EmployeeId)
+         SalesRepId FOREIGN KEY REFERENCES Employees(EmployeeId)
        );
 
 
 CREATE TABLE Employees ( 
-         empolyeeId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         EmpolyeeId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          LastName VARCHAR(30),
          FirstName VARCHAR(30),
-         jobTitle VARCHAR(10),
+         JobTitle VARCHAR(10),
          ReportsTo VARCHAR(30), -- FK????
          MobilePhone VARCHAR(30),
          Email VARCHAR(30),
@@ -58,6 +59,8 @@ CREATE TABLE Products (
 
 CREATE TABLE Orders ( 
          OrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         CustomerId VARCHAR(30),
+         EmployeeId VARCHAR(30),
          OrderedDate DATE, 
          RequiredDate DATE, 
          OrderStatus INT, -- ??????
@@ -68,19 +71,22 @@ CREATE TABLE Orders (
          ShiToCity VARCHAR(30),
          ShiptTCountry VARCHAR(30),
          ShipToPostalCode VARCHAR(5),
-         CustomerId VARCHAR(30) FOREIGN KEY REFERENCES Customers(CustomerId),
-         EmployeeId VARCHAR(30) FOREIGN KEY REFERENCES Employees(EmployeeId),
+         CustomerId FOREIGN KEY REFERENCES Customers(CustomerId),
+         EmployeeId FOREIGN KEY REFERENCES Employees(EmployeeId),
+         ShipperID FOREIGN KEY REFERENCES Shippers(ShipperID)
        );
 
 CREATE TABLE Invoices ( 
          InvoiceId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          OrderId VARCHAR(30),
-         InvoiceDate DATE
+         InvoiceDate DATE, 
+         OrderId FOREIGN KEY REFERENCES Orders(OrderId)
        );
 
 CREATE TABLE ProductDetails ( 
          ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-         MoreDescription VARCHAR(1000) 
+         MoreDescription VARCHAR(1000), 
+         ProductCode FOREIGN KEY REFERENCES Products(Products)
        );
 
 CREATE TABLE Shippers ( 
@@ -91,9 +97,9 @@ CREATE TABLE Shippers (
        );
 
 CREATE TABLE Payments ( 
-         PrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         OrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          PaymentDate Date,
-         Amount NUMERIC(15,2)
+         Amount NUMERIC(15,2),
        );
 
 CREATE TABLE Supplies ( 
