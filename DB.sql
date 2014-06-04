@@ -15,25 +15,8 @@ DROP TABLE IF EXISTS Payments;
 DROP TABLE IF EXISTS Supplies;
 DROP TABLE IF EXISTS ProductSupplier;
 
-
-
-CREATE TABLE Customers ( 
-         CustomerId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-         CompanyName VARCHAR(30),
-         ContactName VARCHAR(30),
-         MobilePhone VARCHAR(10),
-         Email VARCHAR(30),
-         Address VARCHAR(30),
-         City VARCHAR(30),
-         State VARCHAR(30),
-         Country VARCHAR(30),
-         PostCode VARCHAR(5),
-         SalesRepId INT FOREIGN KEY REFERENCES Employees(EmployeeId)
-       );
-
-
-CREATE TABLE Employees ( 
-         empolyeeId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Employees ( --
+         EmployeeId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          LastName VARCHAR(30),
          FirstName VARCHAR(30),
          jobTitle VARCHAR(10),
@@ -47,7 +30,22 @@ CREATE TABLE Employees (
          PostalCode INT(5)
        );
 
-CREATE TABLE Products ( 
+CREATE TABLE Customers ( 
+         CustomerId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         CompanyName VARCHAR(30),
+         ContactName VARCHAR(30),
+         MobilePhone VARCHAR(10),
+         Email VARCHAR(30),
+         Address VARCHAR(30),
+         City VARCHAR(30),
+         State VARCHAR(30),
+         Country VARCHAR(30),
+         PostCode VARCHAR(5),
+         SalesRepId INT, 
+         FOREIGN KEY(SalesRepId) REFERENCES Employees(EmployeeId)
+       );
+
+CREATE TABLE Products ( --
          ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          Name VARCHAR(30),
          Description VARCHAR(1000),
@@ -59,44 +57,47 @@ CREATE TABLE Products (
 CREATE TABLE Orders ( 
          OrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          OrderedDate DATE, 
+         CustomerId INT,
+         EmployeeId INT,
          RequiredDate DATE, 
          OrderStatus INT, -- ??????
          ShippedDate Date,
-         ShipperID VARCHAR(30),
+         ShipperID INT,
          ShipToName VARCHAR(30),
          ShipToAddress VARCHAR(30),
          ShiToCity VARCHAR(30),
          ShiptTCountry VARCHAR(30),
          ShipToPostalCode VARCHAR(5),
-         CustomerId VARCHAR(30) FOREIGN KEY REFERENCES Customers(CustomerId),
-         EmployeeId VARCHAR(30) FOREIGN KEY REFERENCES Employees(EmployeeId),
+         FOREIGN KEY(CustomerId) REFERENCES Customers(CustomerId),
+         FOREIGN KEY(EmployeeId) REFERENCES Employees(EmployeeId),
+         FOREIGN KEY(ShipperID) REFERENCES Shippers(ShipperID)
        );
 
-CREATE TABLE Invoices ( 
+CREATE TABLE Invoices ( --
          InvoiceId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          OrderId VARCHAR(30),
          InvoiceDate DATE
        );
 
-CREATE TABLE ProductDetails ( 
+CREATE TABLE ProductDetails ( --
          ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          MoreDescription VARCHAR(1000) 
        );
 
-CREATE TABLE Shippers ( 
+CREATE TABLE Shippers ( --
          ShipperId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CompanyName VARCHAR(30),
          ContactName VARCHAR(30),
          ContactPhone VARCHAR(10) 
        );
 
-CREATE TABLE Payments ( 
+CREATE TABLE Payments ( --
          PrderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          PaymentDate Date,
          Amount NUMERIC(15,2)
        );
 
-CREATE TABLE Supplies ( 
+CREATE TABLE Supplies ( --
          SupplierId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          CompanyName VARCHAR(30),
          ContactName VARCHAR(30),
@@ -107,7 +108,7 @@ CREATE TABLE Supplies (
          PostalCode VARCHAR(5)
        );
 
-CREATE TABLE ProductSupplier ( 
+CREATE TABLE ProductSupplier ( --
          ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          SupplierId VARCHAR(30),
          Notes VARCHAR(1000)
