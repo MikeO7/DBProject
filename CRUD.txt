@@ -1,0 +1,122 @@
+Create
+	Customer
+	Employee
+
+Read
+	Products
+	Invoices
+Update
+	New Employee
+	New Customer
+
+Delete
+	Product (old models)
+	Fire Employee
+
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Add Customer</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CompanyName">Company Name</label>  
+  <div class="col-md-4">
+  <input id="CompanyName" name="CompanyName" type="text" placeholder="Microsoft" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ContactName">Contact Name</label>  
+  <div class="col-md-4">
+  <input id="ContactName" name="ContactName" type="text" placeholder="John" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Phone">Phone</label>  
+  <div class="col-md-4">
+  <input id="Phone" name="Phone" type="text" placeholder="801-324-2343" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Email">Email</label>  
+  <div class="col-md-4">
+  <input id="Email" name="Email" type="text" placeholder="john@gmail.com" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address">Address</label>  
+  <div class="col-md-4">
+  <input id="Address" name="Address" type="text" placeholder="743 W 2300 S Orem UT" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="City">City</label>  
+  <div class="col-md-4">
+  <input id="City" name="City" type="text" placeholder="Provo" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="State">State</label>  
+  <div class="col-md-4">
+  <input id="State" name="State" type="text" placeholder="Utah" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Country">Country</label>  
+  <div class="col-md-4">
+  <input id="Country" name="Country" type="text" placeholder="USA" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="PostalCod">Postal Code</label>  
+  <div class="col-md-4">
+  <input id="PostalCod" name="PostalCod" type="text" placeholder="84606" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="SalesRepid">Sales Rep ID</label>  
+  <div class="col-md-4">
+  <input id="SalesRepid" name="SalesRepid" type="text" placeholder="0" class="form-control input-md">
+  <span class="help-block">Enter 0 If you do not know your sales rep ID</span>  
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="SubmitNewCustomer"></label>
+  <div class="col-md-4">
+    <button id="SubmitNewCustomer" name="SubmitNewCustomer" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
