@@ -1,6 +1,9 @@
 <?php
- mysql_connect("localhost", "root", "root") or die(mysql_error()); 
- mysql_select_db("Test") or die(mysql_error());
+$con=mysqli_connect("localhost","root","root","Test");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 
 // escape variables for security
 $firstname = mysqli_real_escape_string($con, $_POST['firstname']);
@@ -15,5 +18,5 @@ if (!mysqli_query($con,$sql)) {
 }
 echo "1 record added";
 
-mysqli_close($con);
+
 ?>
