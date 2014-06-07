@@ -1,6 +1,6 @@
 <?php 
  // Connects to your Database 
- mysql_connect("localhost:8888", "root", "root") or die(mysql_error()); 
+ mysql_connect("localhost", "root", "root") or die(mysql_error()); 
  mysql_select_db("Test") or die(mysql_error()); 
 
  ?> 
@@ -85,7 +85,7 @@
                 <h2>(C)RUD</h2>
                 <p>Create data here.</p>
 
-                    <form class="form-horizontal" action="insert.php" method="post">
+                    <form class="form-horizontal" action="insert_customers.php" method="post">
 					<fieldset>
 					
 					<!-- Form Name -->
