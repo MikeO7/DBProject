@@ -43,13 +43,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Custom Query</a>
+                        <a href="#create">Create</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#download">View Certain Data</a>
+                        <a href="#read">Read</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Data Input</a>
+                        <a href="#update">Update</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#delete">Delete</a>
                     </li>
                 </ul>
             </div>
@@ -66,7 +69,7 @@
                         <h1 class="brand-heading">IT Products</h1>
                         <p class="intro-text">Welcome, Ryan.  Click the links above to get started.</p>
                         <div class="page-scroll">
-                            <a href="#about" class="btn btn-circle">
+                            <a href="#create" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
                         </div>
@@ -76,21 +79,125 @@
         </div>
     </section>
 
-    <section id="about" class="container content-section text-center">
+    <section id="create" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Custom Query</h2>
-                <p>Type your own SQL query in the box below to find exactly what you're looking for.</p>
-                	<form name = "query_input" action="run_query.php" method="POST">
-                       Type your query here: <input type="text" size="50" name="query">
-                       <input type="submit" value="Run Query!"> <br>
-                    </form>
+                <h2>(C)RUD</h2>
+                <p>Create data here.</p>
+
+                    <form class="form-horizontal" action="insert.php" method="post">
+					<fieldset>
+					
+					<!-- Form Name -->
+					<legend>Add Customer</legend>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="CompanyName">Company Name</label>  
+					  <div class="col-md-4">
+					  <input id="CompanyName" name="CompanyName" type="text" placeholder="Microsoft" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="ContactName">Contact Name</label>  
+					  <div class="col-md-4">
+					  <input id="ContactName" name="ContactName" type="text" placeholder="John" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="Phone">Phone</label>  
+					  <div class="col-md-4">
+					  <input id="Phone" name="Phone" type="text" placeholder="801-324-2343" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="Email">Email</label>  
+					  <div class="col-md-4">
+					  <input id="Email" name="Email" type="text" placeholder="john@gmail.com" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="Address">Address</label>  
+					  <div class="col-md-4">
+					  <input id="Address" name="Address" type="text" placeholder="743 W 2300 S Orem UT" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="City">City</label>  
+					  <div class="col-md-4">
+					  <input id="City" name="City" type="text" placeholder="Provo" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="State">State</label>  
+					  <div class="col-md-4">
+					  <input id="State" name="State" type="text" placeholder="Utah" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="Country">Country</label>  
+					  <div class="col-md-4">
+					  <input id="Country" name="Country" type="text" placeholder="USA" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="PostalCod">Postal Code</label>  
+					  <div class="col-md-4">
+					  <input id="PostalCod" name="PostalCod" type="text" placeholder="84606" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="SalesRepid">Sales Rep ID</label>  
+					  <div class="col-md-4">
+					  <input id="SalesRepid" name="SalesRepid" type="text" placeholder="0" class="form-control input-md">
+					  <span class="help-block">Enter 0 If you do not know your sales rep ID</span>  
+					  </div>
+					</div>
+					
+					<!-- Button -->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="SubmitNewCustomer"></label>
+					  <div class="col-md-4">
+					    <button id="SubmitNewCustomer" name="SubmitNewCustomer" class="btn btn-primary">Submit</button>
+					  </div>
+					</div>
+					
+					</fieldset>
+					</form>
+
                 
             </div>
         </div>
     </section>
 
-    <section id="download" class="content-section text-center">
+    <section id="read" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -102,7 +209,25 @@
         </div>
     </section>
 
-    <section id="contact" class="container content-section text-center">
+    <section id="update" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p>feedback@startbootstrap.com</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="delete" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Start Bootstrap</h2>
