@@ -192,7 +192,11 @@
 					</fieldset>
 					</form>
 
-                    <form class="form-horizontal">
+                    
+
+
+
+<form class="form-horizontal" action="NewEmployee.php" method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -299,6 +303,7 @@
 
 </fieldset>
 </form>
+
 
                 
             </div>
