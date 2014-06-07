@@ -13,6 +13,7 @@ Delete
 	Product (old models)
 	Fire Employee
 
+// New Customer
 
 <form class="form-horizontal">
 <fieldset>
@@ -120,3 +121,140 @@ Delete
 
 </fieldset>
 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//New Employee
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Add Employee</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="FirstName">First Name</label>  
+  <div class="col-md-4">
+  <input id="FirstName" name="FirstName" type="text" placeholder="Jon" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="LastName">Last Name</label>  
+  <div class="col-md-4">
+  <input id="LastName" name="LastName" type="text" placeholder="Doe" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="JobTitle">Job Title</label>  
+  <div class="col-md-4">
+  <input id="JobTitle" name="JobTitle" type="text" placeholder="Manager" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Phone">Phone</label>  
+  <div class="col-md-4">
+  <input id="Phone" name="Phone" type="text" placeholder="801-345-3564" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Email">Email</label>  
+  <div class="col-md-4">
+  <input id="Email" name="Email" type="text" placeholder="JonDoe@gmail.com" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address">Address</label>  
+  <div class="col-md-4">
+  <input id="Address" name="Address" type="text" placeholder="345 W 3456 S" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="City">City</label>  
+  <div class="col-md-4">
+  <input id="City" name="City" type="text" placeholder="Orem" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="State">State</label>  
+  <div class="col-md-4">
+  <input id="State" name="State" type="text" placeholder="Utah" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Country">Country</label>  
+  <div class="col-md-4">
+  <input id="Country" name="Country" type="text" placeholder="USA" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="PostalCode">Postal Code</label>  
+  <div class="col-md-4">
+  <input id="PostalCode" name="PostalCode" type="text" placeholder="84606" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="SubmitNewEmployee"></label>
+  <div class="col-md-4">
+    <button id="SubmitNewEmployee" name="SubmitNewEmployee" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
