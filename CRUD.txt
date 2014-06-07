@@ -327,3 +327,87 @@ Delete
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Update Customer Info</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Customerid">Customer ID</label>  
+  <div class="col-md-4">
+  <input id="Customerid" name="Customerid" type="text" placeholder="3" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CompayName">New Company Name</label>  
+  <div class="col-md-4">
+  <input id="CompayName" name="CompayName" type="text" placeholder="Costco" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ContactName">New Contact Name</label>  
+  <div class="col-md-4">
+  <input id="ContactName" name="ContactName" type="text" placeholder="Allen" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Phone">New Phone</label>  
+  <div class="col-md-4">
+  <input id="Phone" name="Phone" type="text" placeholder="834-343-2345" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Submit"></label>
+  <div class="col-md-4">
+    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
