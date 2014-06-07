@@ -451,7 +451,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>CRU(D)</h2>
-                <p>Delete Data Here</p>
+                <p>Delete data here.</p>
                 
 
 
