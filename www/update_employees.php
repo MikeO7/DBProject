@@ -7,17 +7,14 @@ if (mysqli_connect_errno()) {
 
 // escape variables for security
 $employee_id = mysqli_real_escape_string($con, $_POST['Employeeid']);
-$new_address = mysqli_real_escape_string($con, $_POST['NewAddress']);
-$new_city = mysqli_real_escape_string($con, $_POST['NewCity']);
-$new_state = mysqli_real_escape_string($con, $_POST['NewState']);
-$new_postal_code = mysqli_real_escape_string($con, $_POST['NewPostalCode']);
+$new_address = mysqli_real_escape_string($con, $_POST['Address']);
+$new_city = mysqli_real_escape_string($con, $_POST['City']);
+$new_state = mysqli_real_escape_string($con, $_POST['State']);
+$new_postal_code = mysqli_real_escape_string($con, $_POST['PostalCode']);
 
-$sql="INSERT INTO Customers (CompanyName, ContactName, MobilePhone, Email, Address, City, State, Country, PostCode) VALUES ('$company_name', '$contact_name', '$phone', '$email', '$address', '$city', '$state', '$country', '$postal_code')";
+mysqli_query($con, "UPDATE Employees SET Address = '$new_address', City = '$new_city', State = '$new_state', PostalCode = '$new_postal_code' WHERE EmployeeId = $employee_id");
 
-if (!mysqli_query($con,$sql)) {
-  die('Error: ' . mysqli_error($con));
-}
-echo "1 record added";
+echo "1 record updated";
 
 mysqli_close($con);
 ?>

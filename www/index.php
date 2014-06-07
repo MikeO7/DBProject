@@ -327,7 +327,8 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>CR(U)D</h2>
                 <p>Update data here.</p>
-                <form class="form-horizontal">
+                
+                <form class="form-horizontal" action="update_employees.php" method="post">
 					<fieldset>
 					
 					<!-- Form Name -->
@@ -371,9 +372,9 @@
 					
 					<!-- Text input-->
 					<div class="form-group">
-					  <label class="col-md-4 control-label" for="PostalCod">New Postal Code</label>  
+					  <label class="col-md-4 control-label" for="PostalCode">New Postal Code</label>  
 					  <div class="col-md-4">
-					  <input id="PostalCod" name="PostalCod" type="text" placeholder="84543" class="form-control input-md">
+					  <input id="PostalCode" name="PostalCode" type="text" placeholder="84543" class="form-control input-md">
 					    
 					  </div>
 					</div>
@@ -388,6 +389,60 @@
 					
 					</fieldset>
 					</form>
+					
+					<form class="form-horizontal" action="update_customers.php" method="post">
+					<fieldset>
+					
+					<!-- Form Name -->
+					<legend>Update Customer Info</legend>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="Customerid">Customer ID</label>  
+					  <div class="col-md-4">
+					  <input id="Customerid" name="Customerid" type="text" placeholder="3" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="CompayName">New Company Name</label>  
+					  <div class="col-md-4">
+					  <input id="CompayName" name="CompayName" type="text" placeholder="Costco" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="ContactName">New Contact Name</label>  
+					  <div class="col-md-4">
+					  <input id="ContactName" name="ContactName" type="text" placeholder="Allen" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="Phone">New Phone</label>  
+					  <div class="col-md-4">
+					  <input id="Phone" name="Phone" type="text" placeholder="834-343-2345" class="form-control input-md">
+					    
+					  </div>
+					</div>
+					
+					<!-- Button -->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="Submit"></label>
+					  <div class="col-md-4">
+					    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+					  </div>
+					</div>
+					
+					</fieldset>
+					</form>
+					
             </div>
         </div>
     </section>
