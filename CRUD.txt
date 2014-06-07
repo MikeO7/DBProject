@@ -258,7 +258,7 @@ Delete
 <fieldset>
 
 <!-- Form Name -->
-<legend>Upate Employees's Address</legend>
+<legend>Update Employees's Address</legend>
 
 <!-- Text input-->
 <div class="form-group">
