@@ -254,6 +254,75 @@ Delete
 
 
 
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Upate Employees's Address</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Employeeid">EmployeeID</label>  
+  <div class="col-md-4">
+  <input id="Employeeid" name="Employeeid" type="text" placeholder="2" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address">New Address</label>  
+  <div class="col-md-4">
+  <input id="Address" name="Address" type="text" placeholder="834 W 345 S" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="City">New City</label>  
+  <div class="col-md-4">
+  <input id="City" name="City" type="text" placeholder="Salt Lake City" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="State">New State</label>  
+  <div class="col-md-4">
+  <input id="State" name="State" type="text" placeholder="UT" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="PostalCod">New Postal Code</label>  
+  <div class="col-md-4">
+  <input id="PostalCod" name="PostalCod" type="text" placeholder="84543" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Submit"></label>
+  <div class="col-md-4">
+    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+
+
+
+
+
 
 
 
