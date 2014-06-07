@@ -89,7 +89,7 @@
 					<fieldset>
 					
 					<!-- Form Name -->
-					<legend>Add Customer</legend>
+					<legend><font color="White">Add Customer</font></legend>
 					
 					<!-- Text input-->
 					<div class="form-group">
@@ -200,7 +200,7 @@
 					<fieldset>
 					
 					<!-- Form Name -->
-					<legend>Add Employee</legend>
+					<legend><font color="White">Add Employee</font></legend>
 					
 					<!-- Text input-->
 					<div class="form-group">
@@ -331,7 +331,7 @@
 					<fieldset>
 					
 					<!-- Form Name -->
-					<legend>Update Employees's Address</legend>
+					<legend><font color="White">Update Employee's Address</font></legend>
 					
 					<!-- Text input-->
 					<div class="form-group">
@@ -405,7 +405,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend>Terminate Employee</legend>
+<legend><font color="White">Terminate Employee</font></legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -434,7 +434,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend>Delete a Product</legend>
+<legend><font color="White">Delete a Product</font></legend>
 
 <!-- Text input-->
 <div class="form-group">
