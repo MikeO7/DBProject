@@ -10,7 +10,7 @@ Update
 	New Customer
 
 Delete
-	Product (old models)
+	Product 
 	Fire Employee
 
 // New Customer
@@ -399,6 +399,105 @@ Delete
 
 </fieldset>
 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Terminate Employee</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Employee">Employee ID</label>  
+  <div class="col-md-4">
+  <input id="Employee" name="Employee" type="text" placeholder="1" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Submit"></label>
+  <div class="col-md-4">
+    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Delete a  Product</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Employee">Product ID</label>  
+  <div class="col-md-4">
+  <input id="Employee" name="Employee" type="text" placeholder="1" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Submit"></label>
+  <div class="col-md-4">
+    <button id="Submit" name="Submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
