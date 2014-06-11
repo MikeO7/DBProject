@@ -7,7 +7,7 @@ if (mysqli_connect_errno()) {
 
 
 
-mysqli_query($con, "ALTER TABLE Employees ADD INDEX `LastName` (`LastName`)");
+mysqli_query($con, "ALTER TABLE Products ADD INDEX `Name` (`Name`)");
 
 echo "index made";
 

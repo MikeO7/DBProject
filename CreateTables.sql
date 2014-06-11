@@ -47,11 +47,11 @@ CREATE TABLE Customers (
 
 CREATE TABLE Products ( 
         ProductCode INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        Name VARCHAR(30),
+        Name VARCHAR(255),
         Description VARCHAR(1000),
         SuggestedUnitPrice NUMERIC(15,2), 
         BuyUnitPrice NUMERIC(15,2), 
-        UnitsInStock INT
+        UnitsInStock INT(255)
        );
 
 CREATE TABLE Orders ( 

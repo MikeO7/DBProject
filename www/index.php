@@ -316,20 +316,22 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>C(R)UD</h2>
                     <p>Read Data Here</p>
-                   View all of the employees with the first name John
+                   View all of the products called 'Camera'
                    </br> 
                    </br> 
                    (without indexing)
                    </br>
+                   </br>
 
-                   <a href="read_wo_indexing.php" class="btn btn-primary btn-large"></i>View Johns</a>
+                   <a href="read_wo_indexing.php" class="btn btn-primary btn-large"></i>View Camera</a>
                    </br>
                    </br>
                    <a href="makeIndex.php" class="btn btn-primary btn-large"></i>Make Index</a>
                    </br>
+                   </br>
                    with indexing
                    </br>
-                   <a href="readindexing.php" class="btn btn-primary btn-large"></i> View View Johns</a>
+                   <a href="readindexing.php" class="btn btn-primary btn-large"></i>View Camera</a>
 
 
                 </div>

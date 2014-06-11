@@ -12,7 +12,7 @@
 <?php
 
 // EXAMPLE
-PrintTable("SELECT * FROM Employees WHERE FirstName='John'");
+PrintTable("SELECT * FROM Products WHERE Name='Camera'");
 function PrintTable($query)
 { 
     // Connect
