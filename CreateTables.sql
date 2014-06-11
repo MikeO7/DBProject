@@ -17,17 +17,17 @@ DROP TABLE IF EXISTS ProductSupplier;
 
 CREATE TABLE Employees ( 
         EmployeeId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        LastName VARCHAR(30),
-        FirstName VARCHAR(30),
-        JobTitle VARCHAR(10),
-        ReportsTo VARCHAR(30), -- FK????
-        MobilePhone VARCHAR(30),
-        Email VARCHAR(30),
-        Address VARCHAR(30),
-        City VARCHAR(30),
-        Country VARCHAR(30),
-        State VARCHAR(2),
-        PostalCode INT(5)
+        LastName VARCHAR(255),
+        FirstName VARCHAR(255),
+        JobTitle VARCHAR(255),
+        ReportsTo VARCHAR(255), -- FK????
+        MobilePhone VARCHAR(255),
+        Email VARCHAR(255),
+        Address VARCHAR(255),
+        City VARCHAR(255),
+        Country VARCHAR(255),
+        State VARCHAR(255),
+        PostalCode INT(255)
        );
 
 CREATE TABLE Customers ( 

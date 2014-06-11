@@ -316,7 +316,22 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>C(R)UD</h2>
                     <p>Read Data Here</p>
-                    <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
+                   View all of the employees with the first name John
+                   </br> 
+                   </br> 
+                   (without indexing)
+                   </br>
+
+                   <a href="read_wo_indexing.php" class="btn btn-primary btn-large"></i>View Johns</a>
+                   </br>
+                   </br>
+                   <a href="makeIndex.php" class="btn btn-primary btn-large"></i>Make Index</a>
+                   </br>
+                   with indexing
+                   </br>
+                   <a href="readindexing.php" class="btn btn-primary btn-large"></i> View View Johns</a>
+
+
                 </div>
             </div>
         </div>
