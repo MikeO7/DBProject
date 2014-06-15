@@ -9,6 +9,7 @@ if (mysqli_connect_errno()) {
 $first_name = mysqli_real_escape_string($con, $_POST['FirstName']);
 $last_name = mysqli_real_escape_string($con, $_POST['LastName']);
 $job_title = mysqli_real_escape_string($con, $_POST['JobTitle']);
+$Reports_To = mysqli_real_escape_string($con, $_POST['ReportsTo']);
 $phone = mysqli_real_escape_string($con, $_POST['Phone']);
 $email = mysqli_real_escape_string($con, $_POST['Email']);
 $address = mysqli_real_escape_string($con, $_POST['Address']);
@@ -17,7 +18,7 @@ $state = mysqli_real_escape_string($con, $_POST['State']);
 $country = mysqli_real_escape_string($con, $_POST['Country']);
 $postal_code = mysqli_real_escape_string($con, $_POST['PostalCode']);
 
-$sql="INSERT INTO Employees (LastName, FirstName, JobTitle, MobilePhone, Email, Address, City, Country, State, PostalCode) VALUES ('$last_name', '$first_name', '$job_title', '$phone', '$email', '$address', '$city', '$country', '$state', '$postal_code')";
+$sql="INSERT INTO Employees (LastName, FirstName, JobTitle, ReportsTo, MobilePhone, Email, Address, City, Country, State, PostalCode) VALUES ('$last_name', '$first_name', '$job_title', '$Reports_To', '$phone', '$email', '$address', '$city', '$country', '$state', '$postal_code')";
 
 if (!mysqli_query($con,$sql)) {
   die('Error: ' . mysqli_error($con));

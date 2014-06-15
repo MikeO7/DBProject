@@ -14,7 +14,7 @@ $address = mysqli_real_escape_string($con, $_POST['Address']);
 $city = mysqli_real_escape_string($con, $_POST['City']);
 $state = mysqli_real_escape_string($con, $_POST['State']);
 $country = mysqli_real_escape_string($con, $_POST['Country']);
-$postal_code = mysqli_real_escape_string($con, $_POST['Postalcode']);
+$postal_code = mysqli_real_escape_string($con, $_POST['PostalCode']);
 $sales_rep_id = mysqli_real_escape_string($con, $_POST['SalesRepid']);
 
 $sql="INSERT INTO Customers (CompanyName, ContactName, MobilePhone, Email, Address, City, State, Country, PostCode) VALUES ('$company_name', '$contact_name', '$phone', '$email', '$address', '$city', '$state', '$country', '$postal_code')";

@@ -167,7 +167,7 @@
 					<div class="form-group">
 					  <label class="col-md-4 control-label" for="PostalCod">Postal Code</label>  
 					  <div class="col-md-4">
-					  <input id="PostalCod" name="PostalCod" type="text" placeholder="84606" class="form-control input-md">
+					  <input id="PostalCode" name="PostalCode" type="text" placeholder="84606" class="form-control input-md">
 					    
 					  </div>
 					</div>
@@ -177,7 +177,7 @@
 					  <label class="col-md-4 control-label" for="SalesRepid">Sales Rep ID</label>  
 					  <div class="col-md-4">
 					  <input id="SalesRepid" name="SalesRepid" type="text" placeholder="0" class="form-control input-md">
-					  <span class="help-block">Enter 0 If you do not know your sales rep ID</span>  
+					  <span class="help-block">Leave blank If you do not know your sales rep ID</span>  
 					  </div>
 					</div>
 					
@@ -227,6 +227,14 @@
 					  <label class="col-md-4 control-label" for="JobTitle">Job Title</label>  
 					  <div class="col-md-4">
 					  <input id="JobTitle" name="JobTitle" type="text" placeholder="Manager" class="form-control input-md">
+					    
+					  </div>
+					</div>
+
+					  <div class="form-group">
+					  <label class="col-md-4 control-label" for="ReportsTo">Reports To (Enter ID)</label>  
+					  <div class="col-md-4">
+					  <input id="ReportsTo" name="ReportsTo" type="text" placeholder="2" class="form-control input-md">
 					    
 					  </div>
 					</div>
@@ -509,17 +517,17 @@
 </br>
 </br>
 
-<form class="form-horizontal" action="delete_product.php" method="post">
+<form class="form-horizontal" action="delete_customer.php" method="post">
 <fieldset>
 
 <!-- Form Name -->
-<legend><font color="White">Delete a Product</font></legend>
+<legend><font color="White">Delete a Customer</font></legend>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Productid">Product ID</label>  
+  <label class="col-md-4 control-label" for="CustomerId">Customer ID</label>  
   <div class="col-md-4">
-  <input id="Productid" name="Productid" type="text" placeholder="1" class="form-control input-md">
+  <input id="CustomerId" name="CustomerId" type="text" placeholder="1" class="form-control input-md">
     
   </div>
 </div>

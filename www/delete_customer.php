@@ -6,10 +6,10 @@ if (mysqli_connect_errno()) {
 }
 
 // escape variables for security
-$product_id = mysqli_real_escape_string($con, $_POST['Productid']);
+$Customer_Id = mysqli_real_escape_string($con, $_POST['CustomerId']);
 
 
-$sql="DELETE FROM Products WHERE ProductId = $product_id";
+$sql="DELETE FROM Customers WHERE CustomerId = $Customer_Id";
 
 if (!mysqli_query($con,$sql)) {
   die('Error: ' . mysqli_error($con));
@@ -35,7 +35,7 @@ mysqli_close($con);
 <?php
 
 // EXAMPLE
-PrintTable("SELECT * FROM Products");
+PrintTable("SELECT * FROM Customers");
 function PrintTable($query)
 { 
     // Connect
