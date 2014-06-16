@@ -340,6 +340,9 @@
                    with indexing
                    </br>
                    <a href="readindexing.php" class="btn btn-primary btn-large"></i>View Camera</a>
+                   </br>
+                   </br>
+                   <a href="customerinfo.php" class="btn btn-primary btn-large"></i>View Customer Invoice and Payment Data</a>
 
 
                 </div>
